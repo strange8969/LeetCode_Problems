@@ -11,12 +11,12 @@ public:
             if (mp[A[i]] == 2) {
                 count++;
             }
-                mp[B[i]]++;
-                if (mp[B[i]] == 2) {
-                    count++;
-                }
-                result[i] = count;
+            mp[B[i]]++;
+            if (mp[B[i]] == 2) {
+                count++;
             }
-            return result;
+            result[i] = count;
         }
-    };
+        return result;
+    }
+};
