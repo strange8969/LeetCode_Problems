@@ -9,7 +9,7 @@ public:
             if(mp.find(rem)!=mp.end()){
                 return {mp[rem],i};
             }
-            mp.insert({nums[i],i});
+            mp[nums[i]] = i;
         }
         return {};
     }
