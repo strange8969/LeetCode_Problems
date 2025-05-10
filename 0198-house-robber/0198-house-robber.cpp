@@ -6,7 +6,7 @@ public:
         if(t[i]!=-1) return t[i];
         int steal = nums[i] + solve(nums,i+2,n);
         int skip = solve(nums,i+1,n);
-        return t[i] = max(steal,skip);
+        return t[i] =  max(steal,skip);
     }
     int rob(vector<int>& nums) {
         int n = nums.size();
