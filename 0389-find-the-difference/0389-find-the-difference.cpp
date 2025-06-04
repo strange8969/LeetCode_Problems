@@ -1,18 +1,13 @@
 class Solution {
 public:
     char findTheDifference(string s, string t) {
-        unordered_map <char,int> freq;
-        
-
-        for(auto &ch:s){
-            freq[ch]++;
+        int sum = 0;
+        for(char &ch:t){
+            sum+=ch;
         }
-        for(auto &ch:t){
-            freq[ch]--;
-            if(freq[ch]<0){
-                return ch;
-            }
+        for(char &ch:s){
+            sum-=ch;
         }
-        return ' ';
+        return (char)sum;
     }
 };
