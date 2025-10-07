@@ -6,8 +6,7 @@ public:
         int j = n-1;
         int maxArea = 0;
         while(i<j){
-            int h = min(height[i],height[j]);
-            int Area= h*(j-i);
+            int Area = min(height[i],height[j]) * (j-i);
             maxArea = max(Area,maxArea);
             if(height[i]<height[j]){
                 i++;
