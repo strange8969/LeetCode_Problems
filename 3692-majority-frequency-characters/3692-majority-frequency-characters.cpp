@@ -9,7 +9,7 @@ public:
         for(auto &p:freq){
             mp[p.second].push_back(p.first);
         }
-        int bestSize = -1, bestFreq = -1;
+    int bestSize = -1, bestFreq = -1;
     vector<char> bestGroup;
 
     for (auto &g : mp) {
@@ -23,6 +23,6 @@ public:
     }
 
     sort(bestGroup.begin(), bestGroup.end()); 
-    return bestGroup;
+    return string(bestGroup.begin(), bestGroup.end());
     }
 };
