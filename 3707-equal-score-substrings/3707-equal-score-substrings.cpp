@@ -4,7 +4,7 @@ public:
         int n = s.length();
         if(n<2) return false;
         int total = 0;
-        for(char &x:s){
+        for(auto &x:s){
             total+=(x-'a'+1);
         }
         if(total%2==1) return false;
