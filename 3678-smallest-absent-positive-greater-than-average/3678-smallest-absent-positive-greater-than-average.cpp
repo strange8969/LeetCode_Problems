@@ -12,7 +12,7 @@ public:
         if(avg <= 0) avg=1;
         while(true){
             if(st.count(avg) == 0) return avg;
-            avg++;
+                avg++;
         }
         return -1;
     }
